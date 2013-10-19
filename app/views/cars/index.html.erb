@@ -6,8 +6,8 @@
       <th>Name</th>
       <th>Description</th>
       <th>Email</th>
-      <th>Isforsale</th>
-      <th>Isprivateparty</th>
+      <th>Sale or wanted?</th>
+      <th>Private Party or Vendor?</th>
       <th>Price</th>
       <th>Location</th>
       <th>Postdate</th>
@@ -23,8 +23,16 @@
         <td><%= car.name %></td>
         <td><%= car.description %></td>
         <td><%= car.email %></td>
-        <td><%= car.isForSale %></td>
-        <td><%= car.isPrivateParty %></td>
+        <td><%=if car.isForSale
+          "For sale"
+      else 
+          "Is wanted"
+      end  %></td>
+        <td><%= if car.isPrivateParty
+                    "Private Party"
+                else
+                    "Vendor"
+                end %></td>
         <td><%= car.price %></td>
         <td><%= car.location %></td>
         <td><%= car.postDate %></td>

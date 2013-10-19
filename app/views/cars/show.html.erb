@@ -16,13 +16,21 @@
 </p>
 
 <p>
-  <strong>Isforsale:</strong>
-  <%= @car.isForSale %>
+  <strong>For sale or is wanted:</strong>
+  <%= if @car.isForSale
+          "For Sale"
+      else 
+          "Wanted"
+      end %>
 </p>
 
 <p>
-  <strong>Isprivateparty:</strong>
-  <%= @car.isPrivateParty %>
+  <strong>Private Party or Vendor:</strong>
+  <%= if @car.isPrivateParty
+          "Private Party"
+      else
+          "Vendor"
+      end %>
 </p>
 
 <p>
