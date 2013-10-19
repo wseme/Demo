@@ -1,4 +1,8 @@
 Demo::Application.routes.draw do
+  # get "static_pages/home"
+  get "static_pages/FAQs"
+  get "static_pages/Fees"
+  get "static_pages/Rules"
   resources :cars
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,7 +10,7 @@ Demo::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
+  root 'static_pages#home'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
