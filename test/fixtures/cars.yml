@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  email: MyString
+  isForSale: false
+  isPrivateParty: false
+  price: 9.99
+  location: MyString
+  postDate: 2013-10-19
+
+two:
+  name: MyString
+  description: MyString
+  email: MyString
+  isForSale: false
+  isPrivateParty: false
+  price: 9.99
+  location: MyString
+  postDate: 2013-10-19
